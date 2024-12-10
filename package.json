@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://https://pinky-nadar.github.io/news",
+    "homepage": "https://pinky-nadar.github.io/news",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
