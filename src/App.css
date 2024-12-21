@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background: #fcfcfc;
+  background-size: 100% auto;
+  background-position: 0% -10%;
+  background-repeat: no-repeat;
+}
+.vertical-middle{
+  vertical-align: middle;
+}
+.mx-1{
+  margin: 0 0.5rem;
+}
+.mx-2{
+  margin: 0 1rem;
+}
