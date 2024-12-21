@@ -14,7 +14,7 @@ function NewsCard({article}) {
     const hours = Math.floor(timeDiff / 36e5);
 
     const formattedHours = `${hours} hours ago`;
-    console.log(formattedHours);
+    //console.log(formattedHours);
 
     //console.log(dateTimeAgo);
   return (

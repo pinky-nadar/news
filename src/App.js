@@ -3,15 +3,19 @@ import Navbar from './components/navbar/Navbar';
 import NewsFeed from './components/newsFeed/NewsFeed';
 import { NewsProvider } from './context/Context';
 
+
+
 function App() {
   return (
+    
     <NewsProvider>
     <div className="App">
-    
         <Navbar/>
         <NewsFeed/>
+        
     </div>
     </NewsProvider>
+    
   );
 }
 

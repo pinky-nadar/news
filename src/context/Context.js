@@ -3,6 +3,10 @@ const {createContext, useContext, useState, useEffect} = require('react');
 const NewsContext = createContext();
 export const useNewsContext = () => useContext(NewsContext);
 
+const apikey = process.env.REACT_APP_API_KEY;
+
+
+
 export const NewsProvider = ({children}) => {
     const API_KEY = "caba642dbfe3431991816d5f4887ea9d";
     const BASE_URL = "https://newsapi.org/v2";
@@ -21,7 +25,7 @@ export const NewsProvider = ({children}) => {
         try{
             const response = await axios.get(`${BASE_URL}/top-headlines`,{
                 params:{
-                    apiKey: API_KEY,
+                    apiKey: apikey,
                     country: "us",
                     page: currentPage,
                     pageSize: 16,
@@ -29,7 +33,7 @@ export const NewsProvider = ({children}) => {
                     q: query
                 },
             });
-            console.log(response.data.articles);
+            //console.log(response.data.articles);
             setArticles(response.data.articles);
             setTotalResult(response.data.totalResults);
         } catch (err){
